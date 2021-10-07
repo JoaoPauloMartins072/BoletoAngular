@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial';
+  position: fixed;
+  margin: 5px;
+  width: 200mm;
+  height: 100mm;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+}
+
+.bankLogo {
+  width: 28%;
+}
+
+.boletoNumber {
+  width: 62%;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+  right: 20px;
+}
+
+td {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 10px;
+}
+
+p.content {
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  font-size: 12px;
+}
+
+.sideBorders {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+hr {
+  border: 1px dashed;
+  height: 300px;
+  width: 0px;
+  right: -5px;
+  top: -5px;
+  position: absolute;
+}
+
+br {
+  content: ' ';
+  display: block;
+  margin: 12px 0;
+  line-height: 12px;
+}
+.last_line{
+  position: absolute;
+  top: 5px;
+  right: -205px
+}

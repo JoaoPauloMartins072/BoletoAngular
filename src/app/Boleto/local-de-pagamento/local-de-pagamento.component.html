@@ -1,0 +1,171 @@
+
+<table cellspacing="0" cellpadding="0" border="1">
+  <tr>
+    <td width="70%" colspan="6">
+      <span class="title">Local de Pagamento</span>
+      <br />
+      <span class="text"
+        >ATÉ O VENCIMENTO EM QUALQUER BANCO OU CORRESPONDENTE NÃO BANCÁRIO,
+        APÓS O VENCIMENTO, PAGUE EM QUALQUER BANCO OU CORRESPONDENTE NÃO
+        BANCÁRIO</span
+      >
+    </td>
+    <td width="30%">
+      <span class="title">Data de Vencimento</span>
+      <br />
+      <br />
+      <p class="content right text" style="font-weight: bold">
+        {{documento.dataVencimento}}</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="70%" colspan="6">
+      <span class="title"
+        ><b>Nome do Beneficiário:</b> {{beneficiario.nome}}
+        CNPJ / CPF:{{beneficiario.CPFouCNPJ}}
+        Endereço:{{beneficiario.endereco}}
+        Nº:{{beneficiario.numeroresidencia}}
+        </span
+      >
+      <br />
+      <br />
+    </td>
+    <td width="30%">
+      <span class="title">Agência/Código Beneficiário</span>
+      <br />
+      <br />
+      <p class="content right"> {{beneficiario.agencia}} / {{beneficiario.codigoBeneficiario}} </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="15%">
+      <span class="title">Data do Documento</span>
+      <br />
+      <p class="content center">{{documento.data}}</p>
+    </td>
+    <td width="17%" colspan="2">
+      <span class="title">Num. do Documento</span>
+      <br />
+      <p class="content center">{{documento.num}}</p>
+    </td>
+    <td width="10%">
+      <span class="title">Espécie doc</span>
+      <br />
+      <p class="content center">{{documento.especie}} <!--Exemplo: DM--> </p>
+    </td>
+    <td width="8%">
+      <span class="title">Aceite</span>
+      <br />
+      <p class="content center">{{documento.aceite}}</p><!--Exemplo: N-->
+    </td>
+    <td>
+      <span class="title">Data Processamento</span>
+      <br />
+      <p class="content center">{{documento.dataProcessamento}}</p>
+    </td>
+    <td width="30%">
+      <span class="title">Carteira/Nosso Número</span>
+      <br />
+      <br />
+      <p class="content right">{{documento.numero}}/{{documento.numero}}</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="15%">
+      <span class="title">Uso do Banco</span>
+      <br />
+      <p class="content center">{{banco.uso}}&nbsp;</p>
+    </td>
+    <td width="10%">
+      <span class="title">Carteira</span>
+      <br />
+      <p class="content center">{{documento.carteira}}</p><!--Exemplo: 157-->
+    </td>
+    <td width="10%">
+      <span class="title">Espécie</span>
+      <br />
+      <p class="content center">R$</p>
+    </td>
+    <td width="8%" colspan="2">
+      <span class="title">Quantidade</span>
+      <br />
+      <p class="content center">{{banco.quantidade}}</p><!--Exemplo: N-->
+    </td>
+    <td>
+      <span class="title">Valor</span>
+      <br />
+      <p class="content center">{{banco.valor}}</p>
+    </td>
+    <td width="30%">
+      <span class="title">(=) Valor do Documento</span>
+      <br />
+      <br />
+      <p class="content right">R${{documento.valor}}</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="6" rowspan="4">
+      <span class="title"
+        >Instruções de responsabilidade do BENEFICIÁRIO. Qualquer dúvida
+        sobre este boleto contate o beneficiário.</span
+      >
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="title">(-) Descontos/Abatimento</span>
+      <br />
+      <p class="content right">{{documento.desconto}}&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="title">(+) Juros/Multa</span>
+      <br />
+      <p class="content right">{{documento.acrescimo}}&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="title">(=) Valor Pago</span>
+      <br />
+      <p class="content right">{{documento.valorPago}}&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="7">
+      <table border="0" style="border: none">
+        <tr>
+          <td width="60%">
+            <span class="text"><b>Nome do Pagador: </b>   {{pagador.nome}}
+            </span>
+          </td>
+          <td>
+            <span class="text"><b>CNPJ/CPF: </b> {{pagador.CPFouCNPJ}}</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text"
+              ><b>Endereço: </b> {{pagador.endereco}}</span
+            >
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text"><b>Sacador/Avalista: </b>{{pagador.sacadorAvalista}} &nbsp;</span>
+          </td>
+          <td>
+            <span class="text"><b>CNPJ/CPF: </b> {{pagador.CPFouCNPJsa}}&nbsp;</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <hr />
+
+</table>

@@ -1,0 +1,23 @@
+<body>
+  <br>
+  <app-cabecalho [numero]="numero"></app-cabecalho>
+  <hr/>
+
+    <tbody>
+
+      <app-local-de-pagamento
+      [documento]="documento"
+      [banco]="banco"
+      [beneficiario]="beneficiario"
+      [pagador]="pagador"
+      ></app-local-de-pagamento>
+
+      <app-recibo-do-sacado
+      [documento2]="documento2"
+      [valor]="valor"
+      ></app-recibo-do-sacado>
+
+    </tbody>
+
+</body>
+
